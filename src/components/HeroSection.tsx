@@ -7,7 +7,7 @@ const HeroSection = () => {
       {/* Hero Image */}
       <div className="absolute inset-0 w-full h-full">
         <img 
-          src="/lovable-uploads/e93233da-ab3b-4bce-945d-0c66c62f8932.png" 
+          src="/lovable-uploads/ee37fa6f-0c32-45fa-aea0-81edf23ae8f1.png" 
           alt="Medicube Age-R Booster Pro instantly lifting sagging skin"
           className="w-full h-full object-cover"
         />
@@ -18,7 +18,7 @@ const HeroSection = () => {
       <div className="relative h-full container mx-auto px-4 flex items-center">
         <div className="max-w-lg text-white">
           <h2 className="text-3xl md:text-5xl font-bold font-montserrat leading-tight mb-4 drop-shadow-lg">
-            Reverse Time in 5 Minutes
+            Erase Wrinkles, Boost Radiance – Results in 5 Minutes!
           </h2>
           <p className="text-lg md:text-xl font-lato mb-6 drop-shadow-md">
             Clinically Proven Microcurrent Tech for Younger-Looking Skin at Home. 15% Off Today Only!

@@ -7,27 +7,27 @@ const BeforeAfterSection = () => {
   const testimonials = [
     {
       id: 1,
-      beforeImage: "/lovable-uploads/a1cfdccd-6c03-4b0d-8d0e-ed28118f55e6.png",
-      afterImage: "/lovable-uploads/161b60a0-43de-4961-9ba0-c606a4b9ed8d.png",
-      beforeAlt: "Before using Medicube Age-R Booster Pro - uneven skin texture",
-      afterAlt: "After using Medicube Age-R Booster Pro - improved skin texture",
-      caption: "28% firmer jawline in 7 days – Lisa, 38"
+      beforeImage: "/lovable-uploads/2e4638dd-7229-4bbf-a807-e7239dd63623.png",
+      afterImage: "/lovable-uploads/2e4638dd-7229-4bbf-a807-e7239dd63623.png",
+      beforeAlt: "Before using Medicube Age-R Booster Pro - visible aging signs",
+      afterAlt: "After using Medicube Age-R Booster Pro - reduced wrinkles",
+      caption: "70% fewer wrinkles in 2 weeks – Emma, 49"
     },
     {
       id: 2,
-      beforeImage: "/lovable-uploads/fa916f9e-29d2-46fe-ae08-de2e9ca9a21b.png",
-      afterImage: "/lovable-uploads/cfeb88d0-0fda-452e-80d6-42dc6cabc7b8.png",
-      beforeAlt: "Before using Medicube Age-R Booster Pro - visible aging signs",
-      afterAlt: "After using Medicube Age-R Booster Pro - reduced wrinkles",
-      caption: "Wrinkles reduced by 45% in 1 month – Maya, 51"
+      beforeImage: "/lovable-uploads/4f23d9fe-9509-4d34-be5f-329cbbd790f1.png",
+      afterImage: "/lovable-uploads/4f23d9fe-9509-4d34-be5f-329cbbd790f1.png",
+      beforeAlt: "Before using Medicube Age-R Booster Pro - acne and redness",
+      afterAlt: "After using Medicube Age-R Booster Pro - clear skin",
+      caption: "Acne scars faded & glow restored in 3 weeks – Zara, 34"
     },
     {
       id: 3,
-      beforeImage: "/lovable-uploads/739c6602-bbe7-4b75-8735-e773fcdbd040.png",
-      afterImage: "/lovable-uploads/a9b08303-0f43-4adf-993b-92fb171d0da8.png",
-      beforeAlt: "Before using Medicube Age-R Booster Pro - mature skin",
-      afterAlt: "After using Medicube Age-R Booster Pro - rejuvenated complexion",
-      caption: "8 weeks to lifted cheekbones & radiant glow – Sophia, 44"
+      beforeImage: "/lovable-uploads/5727cf61-caa8-4606-84ad-c02315a1e6cc.png",
+      afterImage: "/lovable-uploads/5727cf61-caa8-4606-84ad-c02315a1e6cc.png",
+      beforeAlt: "Before using Medicube Age-R Booster Pro - sagging jawline",
+      afterAlt: "After using Medicube Age-R Booster Pro - lifted jawline",
+      caption: "Jawline lifted 2x tighter in 1 month – Lena, 41"
     }
   ];
 
@@ -44,7 +44,7 @@ const BeforeAfterSection = () => {
         </p>
         
         <div className="max-w-4xl mx-auto">
-          <Carousel className="w-full">
+          <Carousel className="w-full" onSelect={(index) => setCurrentSlide(index)}>
             <CarouselContent>
               {testimonials.map((testimonial, index) => (
                 <CarouselItem key={testimonial.id}>
@@ -58,8 +58,8 @@ const BeforeAfterSection = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="left-0" />
-            <CarouselNext className="right-0" />
+            <CarouselPrevious className="left-0 md:-left-12" />
+            <CarouselNext className="right-0 md:-right-12" />
           </Carousel>
           
           <div className="flex justify-center mt-6 space-x-2">
@@ -80,7 +80,7 @@ const BeforeAfterSection = () => {
               rel="noopener noreferrer" 
               className="inline-block bg-deepnavy hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-md transition-all duration-300"
             >
-              Claim My Discount Before Time Runs Out ➔
+              Click here to unlock your 15% discount
             </a>
           </div>
         </div>
