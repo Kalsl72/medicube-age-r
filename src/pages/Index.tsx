@@ -3,7 +3,7 @@ import React from 'react';
 import Header from '../components/Header';
 import HeroSection from '../components/HeroSection';
 import BenefitsSection from '../components/BenefitsSection';
-import TestimonialsSection from '../components/TestimonialsSection';
+import BeforeAfterSection from '../components/BeforeAfterSection'; 
 import HowItWorksSection from '../components/HowItWorksSection';
 import FeaturesList from '../components/FeaturesList';
 import Footer from '../components/Footer';
@@ -45,10 +45,10 @@ const Index = () => {
   return (
     <div className="min-h-screen w-full font-lato bg-white">
       <Header />
-      <main className="pt-0 md:pt-4">
+      <main className="pt-0">
         <HeroSection />
         <BenefitsSection />
-        <TestimonialsSection />
+        <BeforeAfterSection />
         <HowItWorksSection />
         <FeaturesList />
       </main>

@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -49,6 +50,11 @@
     --sidebar-border: 220 13% 91%;
 
     --sidebar-ring: 217.2 91.2% 59.8%;
+    
+    /* Custom colors for the Medicube site */
+    --rosegold: 355 100% 80%;
+    --softpeach: 20 100% 94%;
+    --deepnavy: 215 50% 20%;
   }
 
   .dark {
@@ -98,4 +104,23 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Custom Animation */
+@keyframes pulse-subtle {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 2s ease-in-out infinite;
+}
+
+/* Gradient Backgrounds */
+.bg-gradient-peach {
+  background: linear-gradient(135deg, rgba(255, 228, 216, 0.8) 0%, rgba(255, 175, 155, 0.5) 100%);
 }
