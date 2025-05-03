@@ -19,7 +19,11 @@ const HowToGallery: React.FC<HowToGalleryProps> = ({ steps }) => {
 
   return (
     <div className="w-full">
-      <Carousel className="w-full" onSelect={(index) => setCurrentSlide(index)}>
+      <Carousel className="w-full" onSelect={(index) => {
+        if (typeof index === 'number') {
+          setCurrentSlide(index);
+        }
+      }}>
         <CarouselContent>
           {steps.map((step) => (
             <CarouselItem key={step.number} className="md:basis-1/1">

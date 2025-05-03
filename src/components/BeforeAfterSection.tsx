@@ -44,7 +44,11 @@ const BeforeAfterSection = () => {
         </p>
         
         <div className="max-w-4xl mx-auto">
-          <Carousel className="w-full" onSelect={(index) => setCurrentSlide(index)}>
+          <Carousel className="w-full" onSelect={(index) => {
+            if (typeof index === 'number') {
+              setCurrentSlide(index);
+            }
+          }}>
             <CarouselContent>
               {testimonials.map((testimonial, index) => (
                 <CarouselItem key={testimonial.id}>

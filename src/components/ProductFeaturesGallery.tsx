@@ -19,7 +19,11 @@ const ProductFeaturesGallery: React.FC<ProductFeaturesGalleryProps> = ({ feature
 
   return (
     <div className="w-full">
-      <Carousel className="w-full" onSelect={(index) => setCurrentSlide(index)}>
+      <Carousel className="w-full" onSelect={(index) => {
+        if (typeof index === 'number') {
+          setCurrentSlide(index);
+        }
+      }}>
         <CarouselContent>
           {features.map((feature, index) => (
             <CarouselItem key={feature.id}>
