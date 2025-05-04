@@ -35,7 +35,7 @@ const ProductFeaturesGallery: React.FC<ProductFeaturesGalleryProps> = ({ feature
                     className="w-full h-64 sm:h-80 object-cover"
                   />
                 </div>
-                <div className="mt-4 p-4 bg-white/80 rounded-lg shadow-sm">
+                <div className="mt-4 p-4 bg-white/80 rounded-lg text-center">
                   <h3 className="text-xl font-montserrat font-semibold text-deepnavy mb-1">
                     <span className={`inline-block w-3 h-3 rounded-full mr-2 bg-${feature.color}`}></span>
                     {feature.title}

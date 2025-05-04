@@ -4,7 +4,6 @@ import Header from '../components/Header';
 import HeroSection from '../components/HeroSection';
 import BenefitsSection from '../components/BenefitsSection';
 import BeforeAfterSection from '../components/BeforeAfterSection';
-import HowItWorksSection from '../components/HowItWorksSection';
 import FeaturesList from '../components/FeaturesList';
 import Footer from '../components/Footer';
 import ProductFeaturesGallery from '../components/ProductFeaturesGallery';
@@ -21,16 +20,16 @@ const Index = () => {
     },
     {
       id: 2,
-      image: "/lovable-uploads/e01c980a-5c2d-43e0-80ca-946edd6ae13d.png",
-      title: "Glow Care & Pore Care",
-      description: "Boost radiance with Glow Care mode and improve skin texture with Pore Care for a clear complexion.",
+      image: "/lovable-uploads/8fe3eeb1-c140-4a28-bc27-3e23762aabb9.png",
+      title: "Booster Mode & Air Shot Mode",
+      description: "Booster Mode: Deep wrinkle reduction | Airshot Mode: Pore tightening for acne-prone skin.",
       color: "cyan-500"
     },
     {
       id: 3,
-      image: "/lovable-uploads/19830622-52cf-4b93-abb1-6140585f7818.png",
-      title: "Line & Volume Care + Contour & Elasticity Care",
-      description: "Enhance facial contours with MC Mode and firm skin with Derma Shot Mode for lifted, youthful results.",
+      image: "/lovable-uploads/5e66c10b-18d3-48c9-b070-90d7a1f79fe1.png",
+      title: "MC Mode & Derma Shot Mode",
+      description: "Derma Shot Mode: Collagen activation | MC Mode: Microcurrent jawline sculpting.",
       color: "green-500"
     }
   ];
@@ -75,7 +74,7 @@ const Index = () => {
         <HeroSection />
         <BenefitsSection />
         
-        {/* New Product Features Section */}
+        {/* Product Features Section */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <h2 className="text-2xl md:text-3xl font-bold font-montserrat text-center text-deepnavy mb-4">
@@ -91,7 +90,6 @@ const Index = () => {
         </section>
         
         <BeforeAfterSection />
-        <HowItWorksSection />
         <FeaturesList />
       </main>
       <Footer />

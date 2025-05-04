@@ -1,33 +1,26 @@
 
 import React, { useState } from 'react';
-import BeforeAfterSlider from './BeforeAfterSlider';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 const BeforeAfterSection = () => {
   const testimonials = [
     {
       id: 1,
-      beforeImage: "/lovable-uploads/2e4638dd-7229-4bbf-a807-e7239dd63623.png",
-      afterImage: "/lovable-uploads/2e4638dd-7229-4bbf-a807-e7239dd63623.png",
-      beforeAlt: "Before using Medicube Age-R Booster Pro - visible aging signs",
-      afterAlt: "After using Medicube Age-R Booster Pro - reduced wrinkles",
-      caption: "70% fewer wrinkles in 2 weeks – Emma, 49"
+      image: "/lovable-uploads/2e4638dd-7229-4bbf-a807-e7239dd63623.png",
+      alt: "Wrinkles faded with Medicube Age-R Booster Pro",
+      caption: "Wrinkles faded in 2 weeks! – Sarah, 38"
     },
     {
       id: 2,
-      beforeImage: "/lovable-uploads/4f23d9fe-9509-4d34-be5f-329cbbd790f1.png",
-      afterImage: "/lovable-uploads/4f23d9fe-9509-4d34-be5f-329cbbd790f1.png",
-      beforeAlt: "Before using Medicube Age-R Booster Pro - acne and redness",
-      afterAlt: "After using Medicube Age-R Booster Pro - clear skin",
-      caption: "Acne scars faded & glow restored in 3 weeks – Zara, 34"
+      image: "/lovable-uploads/4f23d9fe-9509-4d34-be5f-329cbbd790f1.png",
+      alt: "Acne scars treated with Medicube Age-R Booster Pro",
+      caption: "Acne scars gone & glowing skin! – Mia, 29"
     },
     {
       id: 3,
-      beforeImage: "/lovable-uploads/5727cf61-caa8-4606-84ad-c02315a1e6cc.png",
-      afterImage: "/lovable-uploads/5727cf61-caa8-4606-84ad-c02315a1e6cc.png",
-      beforeAlt: "Before using Medicube Age-R Booster Pro - sagging jawline",
-      afterAlt: "After using Medicube Age-R Booster Pro - lifted jawline",
-      caption: "Jawline lifted 2x tighter in 1 month – Lena, 41"
+      image: "/lovable-uploads/5727cf61-caa8-4606-84ad-c02315a1e6cc.png",
+      alt: "Jawline enhancement with Medicube Age-R Booster Pro",
+      caption: "My jawline is 10x sharper! – Tina, 45"
     }
   ];
 
@@ -52,13 +45,16 @@ const BeforeAfterSection = () => {
             <CarouselContent>
               {testimonials.map((testimonial, index) => (
                 <CarouselItem key={testimonial.id}>
-                  <BeforeAfterSlider 
-                    beforeImage={testimonial.beforeImage}
-                    afterImage={testimonial.afterImage}
-                    beforeAlt={testimonial.beforeAlt}
-                    afterAlt={testimonial.afterAlt}
-                    caption={testimonial.caption}
-                  />
+                  <div className="flex flex-col items-center">
+                    <div className="overflow-hidden rounded-lg border border-white">
+                      <img
+                        src={testimonial.image}
+                        alt={testimonial.alt}
+                        className="w-full h-64 sm:h-80 object-cover"
+                      />
+                    </div>
+                    <p className="mt-4 text-center text-lg font-semibold text-deepnavy">{testimonial.caption}</p>
+                  </div>
                 </CarouselItem>
               ))}
             </CarouselContent>
