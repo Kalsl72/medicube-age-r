@@ -6,21 +6,33 @@ const BeforeAfterSection = () => {
   const testimonials = [
     {
       id: 1,
-      image: "/lovable-uploads/2e4638dd-7229-4bbf-a807-e7239dd63623.png",
-      alt: "Wrinkles faded with Medicube Age-R Booster Pro",
-      caption: "Wrinkles faded in 2 weeks! – Sarah, 38"
+      image: "/lovable-uploads/58bdf79b-0208-4e08-91f5-bc3cf249c32a.png",
+      alt: "Sarah before and after using Medicube Age-R Booster Pro",
+      caption: "I struggled with severe acne for years. After using Medicube Age-R Booster Pro, my skin cleared up completely. I finally feel confident! – Sarah, 26"
     },
     {
       id: 2,
-      image: "/lovable-uploads/4f23d9fe-9509-4d34-be5f-329cbbd790f1.png",
-      alt: "Acne scars treated with Medicube Age-R Booster Pro",
-      caption: "Acne scars gone & glowing skin! – Mia, 29"
+      image: "/lovable-uploads/a6ad3f16-861d-47a8-9d84-1752b0e9e87a.png",
+      alt: "Sarah before and after using Medicube Age-R Booster Pro for acne and uneven tone",
+      caption: "My acne and uneven tone disappeared in weeks with Medicube. Now I love my reflection! – Sarah, 27"
     },
     {
       id: 3,
-      image: "/lovable-uploads/5727cf61-caa8-4606-84ad-c02315a1e6cc.png",
-      alt: "Jawline enhancement with Medicube Age-R Booster Pro",
-      caption: "My jawline is 10x sharper! – Tina, 45"
+      image: "/lovable-uploads/6b59c95f-3173-4628-b9b8-deb74ec5063d.png",
+      alt: "Aisha before and after using Medicube Age-R Booster Pro for hyperpigmentation",
+      caption: "Medicube faded my dark spots and gave me a radiant glow. I can't stop smiling now! – Aisha, 29"
+    },
+    {
+      id: 4,
+      image: "/lovable-uploads/36995eba-4f61-409e-9a62-8969cd30a056.png",
+      alt: "Jia before and after using Medicube Age-R Booster Pro for redness",
+      caption: "My redness and scars vanished thanks to Medicube. This is the skin I've always wanted! – Jia, 25"
+    },
+    {
+      id: 5,
+      image: "/lovable-uploads/b9a50efe-261e-4b12-a452-927e466ac754.png",
+      alt: "Sarah before and after using Medicube Age-R Booster Pro for wrinkles",
+      caption: "At 50, my wrinkles softened and my skin tightened. Medicube made me look 10 years younger! – Sarah, 50"
     }
   ];
 
@@ -50,10 +62,10 @@ const BeforeAfterSection = () => {
                       <img
                         src={testimonial.image}
                         alt={testimonial.alt}
-                        className="w-full h-64 sm:h-80 object-cover"
+                        className="w-full h-auto object-cover"
                       />
                     </div>
-                    <p className="mt-4 text-center text-lg font-semibold text-deepnavy">{testimonial.caption}</p>
+                    <p className="mt-4 text-center text-lg italic font-lato text-deepnavy">{testimonial.caption}</p>
                   </div>
                 </CarouselItem>
               ))}
